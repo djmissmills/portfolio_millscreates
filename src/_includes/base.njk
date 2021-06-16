@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+{% include 'head.njk' %}
+
+
+<body id="home" class="custom-cursor">
+
+
+      
+<!-- PRELOADER -->
+    <div class="preloader">
+        <div class="centrize full-width">
+            <div class="vertical-center">
+                <div class="spinner">
+                    <div class="double-bounce1"></div>
+                    <div class="double-bounce2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- Preloader End -->
+
+{% include 'header.njk' %}
+{% include 'hero.njk' %}
+{% include 'services.njk' %}
+{% include 'features.njk' %}
+{% include 'about.njk' %}
+{% include 'testimonials.njk' %}
+{% include 'portfolio.njk' %}
+{% include 'contact.njk' %}
+{% include 'footer-content.njk' %}
+
+
+
+{{ content | safe }}
+
+
+{% include 'footer-scripts.njk' %}
+
+
+
+</body>
+</html>

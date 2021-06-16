@@ -1,0 +1,51 @@
+<!-- Contact Section -->
+<section class="comonSection contactSection" id="contact">
+    <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12 wow zoomIn" data-wow-duration="700ms" data-wow-delay="300ms">
+                    <div class="sectionTitle whites">
+                        <h2><span class="underline--magical">ready to start your project?</span></h2>
+                        <p>Drop me a line with your project requirements using the form below, with as much detail as possible.</p>
+                        <p> Alternatively email me at <a href="mailto:hello@millscreates.co.uk">hello@millscreates.co.uk</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-8 offset-xl-2 wow zoomIn" data-wow-duration="700ms" data-wow-delay="300ms">
+                    <div class="row">
+                        <div class="contactForm">
+                            <form action="POST" data-netlify="true" id="contactForm">
+                                <div class="col-xl-12">
+                                    <input type="text" name="f_name" required id="f_name" placeholder="Your Name">
+                                </div>
+                                <div class="col-xl-12">
+                                    <input type="email" name="f_email" required id="f_email" placeholder="Your Email">
+                                </div>
+                                <div class="col-xl-12">
+                                    <input type="number" pattern="\d*" name="f_tel" required id="f_phone" placeholder="Your Phone">
+                                </div>
+                                <div class="col-xl-12">
+                                    <textarea  name="con_message" id="con_message" placeholder="Your Message"></textarea>
+                                </div>
+                                <div class="col-xl-12">
+                                    <div data-netlify-recaptcha="true"></div>
+                                </div>
+                                <div class="col-xl-12 submitbuttons">
+                                    <button type="submit" id="con_submit">Send Message</button>
+                                </div>
+                                {# <div class="col-xl-12">
+                                    <div class="form-check text-center pt-3">
+                                        <input class="form-check-input" type="checkbox" id="defaultCheck1" value="" required>
+                                        <label class="form-check-label" for="defaultCheck1">I consent to storing my details for the purpose of responding to the enquiry </label>
+                                    </div>  
+                                </div> #}
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+    </div>
+</section>
+{# <div class="clearfix"></div> #}
