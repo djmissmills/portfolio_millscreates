@@ -229,11 +229,11 @@
     //========================
     // Pretty Photo
     //========================
-    if ($("a[data-rel^='prettyPhoto']").length > 0) {
-        $("a[data-rel^='prettyPhoto']").prettyPhoto({
-            social_tools: false
-        });
-    }
+    // if ($("a[data-rel^='prettyPhoto']").length > 0) {
+    //     $("a[data-rel^='prettyPhoto']").prettyPhoto({
+    //         social_tools: false
+    //     });
+    // }
 
 
     // $('.axisy').tilt({

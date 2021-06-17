@@ -11,8 +11,9 @@
 // Fonts
 =========================================================================*/
 
-@import url(https://fonts.googleapis.com/css?family=Cutive+Mono);
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 @font-face {
     font-family: 'moontimeregular';
     src: url('../fonts/moontime-regular.woff') format('woff');
@@ -263,7 +264,8 @@ body .magic-hover {
 
 body,
 html {
-    font-family: 'Cutive Mono';
+    /* font-family: 'Cutive Mono'; */
+    font-family: 'Inconsolata', monospace;
     font-size: 14px;
     line-height: 24px;
     color: #282828;

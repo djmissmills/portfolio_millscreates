@@ -44,15 +44,15 @@
     }
     .b1desc h1,
     .b1desc7 h1 {
-        font-size: 4rem;
+        /* font-size: 4rem; */
         /* padding-top: 0.2em; */
     }
     .b1desc p,
     .b1desc7 p {
         width: 90%;
-        font-size: 1.2rem;
+        /* font-size: 1.2rem; */
         line-height: 1.4;
-        padding-top: 1em;
+        /* padding-top: 1em; */
         /* padding-bottom: 0; */
         margin: 0;
     }
@@ -60,6 +60,9 @@
         font-size: 12px;
         padding: 15px 20px;
         margin-top: 2em;
+    }
+    .sF2DHolder {
+        padding: 2em 1.5em;
     }
     /* aboutus ========================= */
     #aboutus {
@@ -82,7 +85,7 @@
         margin-bottom: 30px;
     }
     .singleFeatureDetails p {
-        padding: 1.5em 4em;
+        /* padding: 1.5em 4em; */
     }
     .copyright {
         line-height: 20px;
@@ -162,19 +165,19 @@
     }
     /* Hero ===========*/
     .b1desc {
-        padding: 1em 2em;
+        padding: 0 2em;
     }
     .b1desc h1,
     .b1desc7 h1 {
-        font-size: 3.2rem;
+        /* font-size: 3.2rem; */
         /* padding-top: 0.2em; */
     }
     .b1desc p,
     .b1desc7 p {
-        width: 95%;
-        font-size: 1.2rem;
+        width: 90%;
+        /* font-size: 1.2rem; */
         line-height: 1.4;
-        padding-top: 1em;
+        /* padding-top: 1em; */
         /* padding-bottom: 0; */
         margin: 0;
     }
@@ -184,11 +187,14 @@
         margin-top: 2em;
     }
     /***************** Services *******************/
+    .sF2DHolder {
+        padding: 2em 3em;
+    }
     .singleFeature {
         margin-bottom: 40px;
     }
     .singleFeatureDetails p {
-        font-size: 1.15rem;
+        /* font-size: 1.15rem; */
         letter-spacing: .75;
     }
     #services {
@@ -368,7 +374,7 @@
     }
     #menuToggle a:hover,
     #menuToggle a.active {
-        background: pink;
+        background: #8C848C;
         color: #FFF;
     }
     .mainMenu ul {
@@ -398,16 +404,16 @@
     /* Hero =========================*/
     .b1desc h1,
     .b1desc7 h1 {
-        font-size: 2.2rem;
-        padding-top: 0.2em;
-        padding-bottom: 0.2em;
+        /* font-size: 2.2rem; */
+        /* padding-top: 0.1em; */
+        /* padding-bottom: 0.1em; */
     }
     .b1desc p,
     .b1desc7 p {
-        width: 95%;
-        font-size: 1.2rem;
-        line-height: 1.4;
-        padding-top: 1em;
+        width: 90%;
+        /* font-size: 1.2rem; */
+        line-height: 1.1;
+        /* padding-top: 1em; */
         /* padding-bottom: 0; */
         margin: 0;
     }
@@ -437,9 +443,12 @@
     }
     .sF2DHolder {
         margin: 0;
-        padding: 10px 0;
+        /* padding: 10px 0; */
     }
-    /***************** website Feature *******************/
+    /***************** services *******************/
+    .sF2DHolder {
+        padding: 1em 1.5em;
+    }
     .featuresSection {
         padding-top: 0;
     }
@@ -452,12 +461,16 @@
         margin: 0;
     }
     .singleFeatureDetails p {
-        font-size: 1rem;
+        /* font-size: 1.2rem; */
         line-height: 1.4;
     }
     .singleFeatureDetails h2 {
         /* margin: 10px 0; */
         line-height: 2;
+    }
+    /***************** accordian *******************/
+    .card-body {
+        font-size: 1.2rem;
     }
     /***************** Portfolio *******************/
     .singlePrice {
@@ -566,82 +579,51 @@
 }
 
 @media (max-width: 480px) {
+    .contactSection {
+        background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_fill,h_480,f_auto,q_auto/v1622636161/portfolio/webdesign-photography-freelancer-london-coffee-nespresso_yit5xz.jpg');
+    }
     .testimonialsection {
-        background: url(https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_crop,g_auto,h_667,w_480,f_auto,q_auto/portfolio/photography-freelancer-london-webdesign-portfolio.jpg);
-        position: relative;
-        background-position: center center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_fill,h_480,f_auto,q_auto/portfolio/photography-freelancer-london-webdesign-portfolio.jpg');
     }
     .slidersection {
-        background: url(https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_crop,g_auto,h_700,w_480,f_auto,q_auto/portfolio/festival-website.jpg);
-        position: relative;
-        background-position: center center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_crop,g_auto,h_400,w_700,f_auto,q_auto/portfolio/festival-website.jpg');
     }
-    .contactSection {
-        background: url(https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_fill,h_480/v1622636161/portfolio/webdesign-photography-freelancer-london-coffee-nespresso_yit5xz.jpg);
-        position: relative;
-        background-position: center center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
+    @supports (-webkit-touch-callout: inherit) {
+        .contactSection,
+        .testimonialsection,
+        .slidersection {
+            background-attachment: scroll;
+        }
     }
 }
 
-@media (min-width: 481px) and (max-width: 992px) {
-    .testimonialsection {
-        background: url(https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_scale,w_700,f_webp,fl_awebp,q_auto/portfolio/photography-freelancer-london-webdesign-portfolio.jpg);
-        position: relative;
-        background-position: center center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
+@media (min-width: 481px) and (max-width: 1024px) {
+    .contactSection {
+        background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_fill,f_webp,fl_awebp,q_auto/v1622636161/portfolio/webdesign-photography-freelancer-london-coffee-nespresso_yit5xz.jpg');
     }
     .slidersection {
-        background: url(https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_crop,g_auto,h_700,w_480,f_auto,q_auto/portfolio/festival-website.jpg);
-        position: relative;
-        background-position: center center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/f_auto,q_auto/portfolio/festival-website.jpg');
     }
-    .contactSection {
-        background: url(https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_fit,w_750,f_auto,q_auto/portfolio/webdesign-photography-freelancer-london-coffee-nespresso_yit5xz.jpg);
-        position: relative;
-        background-position: center center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
+    .testimonialsection {
+        background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_scale,w_700,f_webp,fl_awebp,q_auto/portfolio/photography-freelancer-london-webdesign-portfolio.jpg');
+    }
+    @supports (-webkit-touch-callout: inherit) {
+        .contactSection,
+        .testimonialsection,
+        .slidersection {
+            background-attachment: scroll;
+        }
     }
 }
 
-@media (min-width: 993px) {
-    .testimonialsection {
-        background: url(https://res.cloudinary.com/millscreates/image/upload/e_grayscale/f_auto,q_auto/portfolio/photography-freelancer-london-webdesign-portfolio.jpg);
-        position: relative;
-        background-position: center center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
+@media (min-width: 1025px) {
+    .contactSection {
+        background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/f_auto,q_auto/v1622636161/portfolio/webdesign-photography-freelancer-london-coffee-nespresso_yit5xz.jpg');
     }
     .slidersection {
-        background: url(https://res.cloudinary.com/millscreates/image/upload/e_grayscale/f_auto,q_auto/portfolio/festival-website.jpg);
-        position: relative;
-        background-position: center center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/f_auto,q_auto/portfolio/festival-website.jpg');
     }
-    .contactSection {
-        background: url(https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_crop,g_auto,h_1700,w_2198,f_auto,q_auto/portfolio/webdesign-photography-freelancer-london-coffee-nespresso_yit5xz.jpg);
-        position: relative;
-        background-position: center center;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-        background-size: cover;
+    .testimonialsection {
+        background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/f_auto,q_auto/portfolio/photography-freelancer-london-webdesign-portfolio.jpg');
     }
 }
