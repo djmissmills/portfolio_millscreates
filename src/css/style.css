@@ -96,7 +96,7 @@
 
 .underline--magical {
     font-size: 1.7rem;
-    background-image: linear-gradient(90deg, #742450 0%, #D1CBCC 100%);
+    background-image: linear-gradient(90deg, #fa038b 0%, #ffffff 100%);
     background-repeat: no-repeat;
     background-size: 100% 0.2em;
     background-position: 0 100%;
@@ -163,13 +163,9 @@
 // Hero
 =========================================================================*/
 
-.b1desc {
-    min-height: 900px;
-}
-
 .b1desc h1,
 .b1desc7 h1 {
-    color: #fff;
+    color: #272727;
     /* font-size: 5rem; */
     font-size: clamp(3rem, 6vw, 6rem);
     /* line-height: 1.1; */
@@ -182,13 +178,13 @@
 
 .b1desc h2 {
     font-family: inherit;
-    color: white;
+    color: #272727;
 }
 
 .b1desc p,
 .b1desc7 p {
     padding-bottom: 0.3em;
-    color: #fff;
+    color: #272727;
     font-size: clamp(1.2rem, 2vw, 1.7rem);
     width: 90%;
     /* line-height: 28px; */
@@ -198,9 +194,9 @@
 
 .apButtons {
     margin-top: 0.8em;
-    border: 2px solid #fff;
+    border: 2px solid #272727;
     border-radius: 22px;
-    background: none;
+    background: #272727;
     color: #fff;
     display: inline-block;
     font-size: 16px;
@@ -219,16 +215,17 @@
 }
 
 .apButtons:hover {
-    background: #FFF;
-    color: #222;
+    background: #fff;
+    color: #272727;
     text-decoration: none;
 }
 
-.bannerSeven {
+.heroSection {
     width: 100%;
     position: relative;
     background: #f5f5f5;
     overflow: hidden;
+    height: 100vh;
 }
 
 .b1desc7 {
@@ -269,20 +266,42 @@
     z-index: 2;
 }
 
-#videoWrap {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
 .vide_con {
     width: 100%;
     position: absolute;
-    height: 100%;
+    height: 100vh;
+    padding: 6em 0;
     left: 0;
     top: 0;
     z-index: 2;
+    /* background: linear-gradient(45deg, rgba(255, 175, 189, .7), rgba(100, 216, 243, .7), rgba(234, 236, 198, .7), rgba(245, 146, 176, .7), rgba(52, 219, 216, .7)) 0 0 / 1000% no-repeat, url(https://res.cloudinary.com/millscreates/image/upload/e_grayscale/v1622636164/portfolio/photography-freelancer-london-webdesign-portfolio.jpg) 0 0 / cover no-repeat; */
+    /* background: linear-gradient(45deg, rgba(255, 175, 188, .9), rgba(100, 216, 243, .9), rgba(232, 236, 1, .7), rgba(245, 146, 176, .9), rgba(52, 219, 216, .7)) 0 0 / 1000% no-repeat, url(https://images.unsplash.com/photo-1428765048792-aa4bdde46fea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3578&q=80) 0 0 / cover no-repeat; */
+    -webkit-animation: gradientAnimation 40s ease infinite;
+    animation: gradientAnimation 40s ease infinite;
+}
+
+@-webkit-keyframes gradientAnimation {
+    0% {
+        background-position: 0% 30%, 0 0;
+    }
+    50% {
+        background-position: 100% 70%, 0 0;
+    }
+    100% {
+        background-position: 0% 30%, 0 0;
+    }
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 30%, 0 0;
+    }
+    50% {
+        background-position: 100% 70%, 0 0;
+    }
+    100% {
+        background-position: 0% 30%, 0 0;
+    }
 }
 
 .period {
@@ -953,7 +972,8 @@ a.pp_close {
 }
 
 .contactSection a {
-    color: #dc4899;
+    color: #fa038b;
+    /* font-size: 1.5rem; */
 }
 
 .contactSection a:hover {
@@ -1008,10 +1028,10 @@ a.pp_close {
 
 .contactForm input[type="text"],
 .contactForm input[type="email"],
-.contactForm input[type="number"] {
+.contactForm input[type="tel"] {
     width: 100%;
     height: 40px;
-    padding-left: 15px;
+    /* padding-left: 15px; */
     border: none;
     border-bottom: 1px dotted rgba(255, 255, 255, .5);
     margin-bottom: 25px;
@@ -1023,7 +1043,7 @@ a.pp_close {
 
 .contactForm input[type="text"].reqError,
 .contactForm input[type="email"].reqError,
-.contactForm input[type="number"].reqError {
+.contactForm input[type="tel"].reqError {
     border-color: #f00;
 }
 
@@ -1078,7 +1098,7 @@ a.pp_close {
     text-align: center;
     resize: none;
     color: #FFF;
-    font-size: 14px;
+    font-size: 1rem;
     font-weight: bold;
     letter-spacing: 3px;
     font-family: 'Open Sans', sans-serif;

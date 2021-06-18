@@ -273,35 +273,17 @@ magicMouse(options);
 
 
 //vanta js background
-VANTA.TOPOLOGY({
-    el: "#ripple",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.00,
-    minWidth: 200.00,
-    scale: 1.00,
-    scaleMobile: 1.00,
-    // color: 0x325866,
-    // color: 0x436e78,
-    color: 0x7d404a,
-    backgroundColor: 0x202020
-        // color: 0x898989,
-        // color: 0x645f5f,
-});
+// VANTA.TOPOLOGY({
+//     el: "#ripple",
+//     mouseControls: true,
+//     touchControls: true,
+//     gyroControls: false,
+//     minHeight: 200.00,
+//     minWidth: 200.00,
+//     scale: 1.00,
+//     scaleMobile: 1.00,
 
-// const effect = VANTA.TOPOLOGY({
-//     el: '#ripple',
-//     color: 0x645f5f,
-//     backgroundColor: 0x91818
-// })
+//     color: 0x7d404a,
+//     backgroundColor: 0x202020
 
-
-// const effect = VANTA.TOPOLOGY({
-//     el: '#ripple',
-//     color: 0x645f5f
-// })
-
-
-// Later, if the container changes size and you want to force Vanta to redraw at the new canvas size
-// effect.resize()
+// });
