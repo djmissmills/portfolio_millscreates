@@ -40,7 +40,7 @@
     }
     /* Hero ===========*/
     .b1desc {
-        padding: 1em 3em;
+        /* padding: 1em 3em; */
     }
     .b1desc h1,
     .b1desc7 h1 {
@@ -165,7 +165,7 @@
     }
     /* Hero ===========*/
     .b1desc {
-        padding: 0 2em;
+        /* padding: 0 2em; */
     }
     .b1desc h1,
     .b1desc7 h1 {
@@ -410,7 +410,7 @@
     }
     .b1desc p,
     .b1desc7 p {
-        width: 90%;
+        width: 80%;
         /* font-size: 1.2rem; */
         line-height: 1.1;
         /* padding-top: 1em; */
@@ -420,10 +420,10 @@
     .apButtons {
         font-size: 12px;
         padding: 15px 20px;
-        margin-top: 2em;
+        margin-top: 1em;
     }
     .b1desc {
-        padding: 0 1.5em;
+        padding: 0 2em;
     }
     /* services ======================*/
     #services {
@@ -565,6 +565,11 @@
     .contactForm .form-check-label {
         font-size: 0.8rem;
     }
+
+    .contactSection a {
+        /* color: #fa038b; */
+        font-size: 1.5rem;
+    }
     /***************** Footer *******************/
     .copyright {
         text-align: center;
@@ -588,13 +593,27 @@
     .slidersection {
         background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_crop,g_auto,h_400,w_700,f_auto,q_auto/portfolio/festival-website.jpg');
     }
-    .vide_con {
-        background: linear-gradient(45deg, rgba(255, 175, 188, .9), rgba(100, 216, 243, .9), rgba(232, 236, 1, .7), rgba(245, 146, 176, .9), rgba(52, 219, 216, .7)) 0 0 / 1000% no-repeat, url(https://res.cloudinary.com/millscreates/image/upload/f_auto,q_auto/portfolio/wheel_480_small.jpg) 0 0 / cover no-repeat;
+    .heroSection {
+        background: -webkit-linear-gradient(45deg, rgba(255, 175, 188, .9), rgba(100, 216, 243, .9), rgba(232, 236, 1, .7), rgba(245, 146, 176, .9), rgba(52, 219, 216, .7)) 0 0 / 1000% no-repeat, url(https://res.cloudinary.com/millscreates/image/upload/v1624028632/portfolio/wheel_480_small.jpg) 0 0 / cover no-repeat;
+        /* -webkit-animation: gradientAnimation 40s ease infinite; */
+        /* animation: gradientAnimation 40s ease infinite;  */
+    }
+    @-webkit-keyframes gradientAnimation {
+        0% { background-position: 0% 50%, 0 0;}
+        50% { background-position: 80% 0%, 0 0;}
+        100% { background-position: 0% 30%, 0 0;}
+    }
+    
+    @keyframes gradientAnimation {
+        0% { background-position: 0% 50%, 0 0;}
+        50% { background-position: 80% 0%, 0 0;}
+        100% { background-position: 0% 30%, 0 0;}
     }
     @supports (-webkit-touch-callout: inherit) {
         .contactSection,
         .testimonialsection,
-        .slidersection {
+        .slidersection
+        {
             background-attachment: scroll;
         }
     }
@@ -610,13 +629,14 @@
     .testimonialsection {
         background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_scale,w_700,f_webp,fl_awebp,q_auto/portfolio/photography-freelancer-london-webdesign-portfolio.jpg');
     }
-    .vide_con {
-        background: linear-gradient(45deg, rgba(255, 175, 188, .9), rgba(100, 216, 243, .9), rgba(232, 236, 1, .7), rgba(245, 146, 176, .9), rgba(52, 219, 216, .7)) 0 0 / 1000% no-repeat, url(https://res.cloudinary.com/millscreates/image/upload/f_auto,q_auto/portfolio/webdesign_london_wheel_large_.jpg) 0 0 / cover no-repeat;
+    .heroSection {
+        background: -webkit-linear-gradient(45deg, rgba(255, 175, 188, .9), rgba(100, 216, 243, .9), rgba(232, 236, 1, .7), rgba(245, 146, 176, .9), rgba(52, 219, 216, .7)) 0 0 / 1000% no-repeat, url(https://res.cloudinary.com/millscreates/image/upload/portfolio/webdesign_london_wheel_large_.jpg) 0 0 / cover no-repeat;
     }
     @supports (-webkit-touch-callout: inherit) {
         .contactSection,
         .testimonialsection,
-        .slidersection {
+        .slidersection
+         {
             background-attachment: scroll;
         }
     }
@@ -632,7 +652,7 @@
     .testimonialsection {
         background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/f_auto,q_auto/portfolio/photography-freelancer-london-webdesign-portfolio.jpg');
     }
-    .vide_con {
+    .heroSection {
         background: linear-gradient(45deg, rgba(255, 175, 188, .9), rgba(100, 216, 243, .9), rgba(232, 236, 1, .7), rgba(245, 146, 176, .9), rgba(52, 219, 216, .7)) 0 0 / 1000% no-repeat, url(https://res.cloudinary.com/millscreates/image/upload/f_auto,q_auto/portfolio/webdesign_london_wheel_large_.jpg) 0 0 / cover no-repeat;
     }
 }

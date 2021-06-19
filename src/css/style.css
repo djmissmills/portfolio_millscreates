@@ -170,7 +170,7 @@
     font-size: clamp(3rem, 6vw, 6rem);
     /* line-height: 1.1; */
     /* margin: 0.2em 0; */
-    font-weight: 900;
+    font-weight: 600;
     letter-spacing: 0;
     line-height: 1;
     padding-bottom: 0.1em;
@@ -186,7 +186,7 @@
     padding-bottom: 0.3em;
     color: #272727;
     font-size: clamp(1.2rem, 2vw, 1.7rem);
-    width: 90%;
+    width: 70%;
     /* line-height: 28px; */
     /* letter-spacing: -1px; */
     line-height: 1.2;
@@ -218,14 +218,6 @@
     background: #fff;
     color: #272727;
     text-decoration: none;
-}
-
-.heroSection {
-    width: 100%;
-    position: relative;
-    background: #f5f5f5;
-    overflow: hidden;
-    height: 100vh;
 }
 
 .b1desc7 {
@@ -266,46 +258,43 @@
     z-index: 2;
 }
 
-.vide_con {
+
+/* .heroSection {
     width: 100%;
-    position: absolute;
+    position: relative;
+    background: #f5f5f5;
+    overflow: hidden;
     height: 100vh;
-    padding: 6em 0;
-    left: 0;
-    top: 0;
-    z-index: 2;
-    /* background: linear-gradient(45deg, rgba(255, 175, 189, .7), rgba(100, 216, 243, .7), rgba(234, 236, 198, .7), rgba(245, 146, 176, .7), rgba(52, 219, 216, .7)) 0 0 / 1000% no-repeat, url(https://res.cloudinary.com/millscreates/image/upload/e_grayscale/v1622636164/portfolio/photography-freelancer-london-webdesign-portfolio.jpg) 0 0 / cover no-repeat; */
-    /* background: linear-gradient(45deg, rgba(255, 175, 188, .9), rgba(100, 216, 243, .9), rgba(232, 236, 1, .7), rgba(245, 146, 176, .9), rgba(52, 219, 216, .7)) 0 0 / 1000% no-repeat, url(https://images.unsplash.com/photo-1428765048792-aa4bdde46fea?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=3578&q=80) 0 0 / cover no-repeat; */
-    -webkit-animation: gradientAnimation 40s ease infinite;
-    animation: gradientAnimation 40s ease infinite;
+} */
+
+.heroSection {
+    width: 100%;
+    position: relative;
+    height: 100vh;
+    /* padding: 6em 0; */
+    /* left: 0;
+    top: 0; */
+    z-index: 3;
+    overflow: hidden;
+	/* background: linear-gradient(45deg, rgba(255,175,189,.7), rgba(100,216,243,.7), rgba(234,236,198,.7), rgba(245,146,176,.7), rgba(52,219,216,.7)) 0 0 / 1000% no-repeat, url(https://picsum.photos/g/2000/1200?image=443) 0 0 / cover no-repeat; */
+	-webkit-animation: gradientAnimation 40s ease infinite;
+	animation: gradientAnimation 40s ease infinite;
 }
 
 @-webkit-keyframes gradientAnimation {
-    0% {
-        background-position: 0% 30%, 0 0;
-    }
-    50% {
-        background-position: 100% 70%, 0 0;
-    }
-    100% {
-        background-position: 0% 30%, 0 0;
-    }
+    0% { background-position: 0% 30%, 0 0;}
+    50% { background-position: 100% 70%, 0 0;}
+    100% { background-position: 0% 30%, 0 0;}
 }
 
 @keyframes gradientAnimation {
-    0% {
-        background-position: 0% 30%, 0 0;
-    }
-    50% {
-        background-position: 100% 70%, 0 0;
-    }
-    100% {
-        background-position: 0% 30%, 0 0;
-    }
+    0% { background-position: 0% 30%, 0 0;}
+    50% { background-position: 100% 70%, 0 0;}
+    100% { background-position: 0% 30%, 0 0;}
 }
 
 .period {
-    color: #8C848C;
+    color: #fa038b;
 }
 
 
