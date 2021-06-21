@@ -30,7 +30,6 @@ module.exports = function(eleventyConfig) {
       });
       return minified;
     }
-
     return content;
   });
 };
