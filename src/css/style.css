@@ -954,7 +954,9 @@ a.pp_close {
 /*=======================================================================
 //  Contact Section
 =========================================================================*/
-
+.contactForm .hidden{
+    display:none;
+}
 .contactSection h2 span {
     color: white;
     padding: 6px;
