@@ -15,6 +15,7 @@
         "netlify-cli": "^3.37.36"
     },
     "dependencies": {
-        "eleventy-plugin-respimg": "^0.1.2"
+        "eleventy-plugin-respimg": "^0.1.2",
+        "html-minifier": "^4.0.0"
     }
 }
