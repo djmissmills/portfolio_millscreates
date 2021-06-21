@@ -14,8 +14,3 @@ module.exports = function(eleventyConfig) {
         },
     };
 };
-
-const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
-module.exports = (eleventyConfig) => {
-  eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
-};
