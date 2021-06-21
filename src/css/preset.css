@@ -67,7 +67,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #8C848C;
+    background: #fa038b;
     opacity: 1;
     -webkit-animation: loader-bounce 2s infinite ease-in-out;
     animation: loader-bounce 2s infinite ease-in-out;
@@ -111,8 +111,8 @@
 ==================*/
 
 ::selection {
-    color: #2E2126;
-    background: #8C848C;
+    color: #fff;
+    background: #272727;
 }
 
 
