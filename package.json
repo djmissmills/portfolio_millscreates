@@ -12,11 +12,9 @@
     "license": "ISC",
     "devDependencies": {
         "@11ty/eleventy": "^0.12.1",
-        "@sherby/eleventy-plugin-files-minifier": "^1.1.1",
         "netlify-cli": "^3.37.36"
     },
     "dependencies": {
-        "eleventy-plugin-respimg": "^0.1.2",
-        "html-minifier": "^4.0.0"
+        "eleventy-plugin-respimg": "^0.1.2"
     }
 }
