@@ -31,6 +31,36 @@
 
     }
 
+    //=======================================================
+    // Background Video
+    //=======================================================
+    // var vid = document.getElementById("myVideo");
+    // var vid = document.getElementById("myVideo").setAttribute('autoplay', false);
+    // var vid = document.getElementById("myVideo").setAttribute('autoplay', true);
+
+
+    // function playPause() {
+    //     if (vid.paused) {
+    //         vid.play();
+    //     } else {
+    //         vid.pause();
+    //     }
+    // }
+    // if ($('#myVideo').length < 0) {
+
+    // if ($('#myVideo').length > 0) {
+    //     $('#playVideo').on('click', function(e) {
+    //         e.preventDefault();
+    //         playPause();
+    //         if ($(this).hasClass('playing')) {
+    //             $(this).removeClass('playing').html('<i class="fas fa-play"></i>');
+    //             vid.pause();
+    //         } else {
+    //             $(this).addClass('playing').html('<i class="fas fa-pause"></i>');
+    //             vid.play();
+    //         }
+    //     });
+    // }
 
 
     //========================
@@ -43,6 +73,15 @@
         wow.init();
     }
 
+
+    // ========================
+    // Loader 
+    // ========================
+    // $(window).load(function() {
+    //     if ($(".loaderWrap").length > 0) {
+    //         $(".loaderWrap").delay(500).fadeOut("slow");
+    //     }
+    // });
 
     // ========================
     // Loader 

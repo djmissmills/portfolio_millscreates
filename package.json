@@ -12,7 +12,6 @@
     "license": "ISC",
     "devDependencies": {
         "@11ty/eleventy": "^0.12.1",
-        "eleventy-plugin-lazyimages": "^2.1.0",
         "netlify-cli": "^3.37.36",
         "node-html-parser": "^3.3.5"
     },
