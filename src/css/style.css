@@ -4256,6 +4256,1069 @@ Copyright (c) 2015 Daniel Eden
 }
 
 
-/* Responsive ================================ */
+/* PRESET ================================ */
+/*=======================================================================
+[Font Family]
+=========================================================================
+1. Cutive Mono [ body]
+2. Roboto [headings ]
+
+==========================================================================*/
 
 
+/*=======================================================================
+// Fonts
+=========================================================================*/
+
+/* @import url('https://fonts.googleapis.com/css?family=Cutive+Mono'); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@font-face {
+    font-family: 'moontimeregular';
+    src: url('../fonts/moontime-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: fallback;
+}
+
+
+
+/* ==================================PRELOADER=================================== */
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #f8f8ff;
+    z-index: 999;
+}
+
+.centrize {
+    display: table;
+    table-layout: fixed;
+    height: 100%;
+    position: relative;
+}
+
+.full-width {
+    max-width: 100%;
+    width: 100%;
+}
+
+.vertical-center {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.preloader .spinner {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.preloader .spinner .double-bounce1,
+.preloader .spinner .double-bounce2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fa038b;
+    opacity: 1;
+    -webkit-animation: loader-bounce 2s infinite ease-in-out;
+    animation: loader-bounce 2s infinite ease-in-out;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -khtml-border-radius: 50%;
+}
+
+.preloader .spinner .double-bounce2 {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+    opacity: 0.1;
+}
+
+@-webkit-keyframes loader-bounce {
+    0%,
+    100% {
+        -webkit-transform: scale(0);
+    }
+    50% {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes loader-bounce {
+    0%,
+    100% {
+        transform: scale(0);
+        -webkit-transform: scale(0);
+    }
+    50% {
+        transform: scale(1);
+        -webkit-transform: scale(1);
+    }
+}
+
+
+/*=================
+// Selection Text
+==================*/
+
+::selection {
+    color: #fff;
+    background: #272727;
+}
+
+
+/*=================
+// Scroll Bar
+==================*/
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* width of the entire scrollbar */
+
+body::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+
+/* color of the tracking area */
+
+body::-webkit-scrollbar-thumb {
+    background-color: #fa038b;
+    /* color of the scroll thumb */
+    border-radius: 0px;
+    /* roundness of the scroll thumb */
+    /* border: 0px solid orange;  */
+    /* creates padding around scroll thumb */
+}
+
+
+/* html {
+    scroll-behavior: smooth;
+} */
+
+
+/*=================
+// Blinking cursor
+==================*/
+
+.blinking-cursor {
+    /* font-weight: 100; */
+    font-size: 1.3rem;
+    color: #272727;
+    font-family: arial;
+    -webkit-animation: 1s blink step-end infinite;
+    -moz-animation: 1s blink step-end infinite;
+    -ms-animation: 1s blink step-end infinite;
+    -o-animation: 1s blink step-end infinite;
+    animation: 1s blink step-end infinite;
+}
+
+@keyframes blink {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: #272727;
+    }
+}
+
+@-moz-keyframes blink {
+    from,
+    to {
+        color: transparent;
+    }
+    50% {
+        color: #fff;
+    }
+}
+
+
+/*=================
+// Pointer Cursor
+==================*/
+
+body #magicPointer {
+    height: 10px;
+    width: 10px;
+    position: fixed;
+    z-index: 9999;
+    /* background: blue; */
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+    pointer-events: none;
+}
+
+body #magicMouseCursor {
+    position: fixed;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #8C848C;
+    border-radius: 50%;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    transition: transform 0.07s, width 0.3s, height 0.3s;
+    pointer-events: none;
+}
+
+body #magicPointer {
+    height: 10px;
+    width: 10px;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #8C848C;
+    border-radius: 50%;
+    pointer-events: none;
+    transition-duration: 200ms;
+    transition-timing-function: ease-out;
+}
+
+
+/* body #magicPointer {
+height: 10px;
+width: 10px;
+position: fixed;
+z-index: 9999;
+background: blue;
+pointer-events: none;} */
+
+body #magicPointer.pointer-blur {
+    height: 50px;
+    width: 50px;
+    background: rgba(128, 128, 128, 0.187);
+    box-shadow: 0px 0px 10px -5px rgb(4, 4, 4);
+}
+
+
+/* body #magicPointer.pointer-overlay {
+    height: 40px;
+    width: 40px;
+    mix-blend-mode: multiply;
+    background: #8c848c3a;
+    box-shadow: 0px 0px 15px -5px white;
+} */
+
+body .magic-hover {
+    transition: all 0.2s;
+}
+
+
+/* body .magic-hover:hover {
+    cursor: none;
+    color: red;
+} */
+
+
+/* Box Model */
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    /* font-family: 'Cutive Mono'; */
+    font-family: 'Inconsolata', monospace;
+    font-size: 14px;
+    line-height: 24px;
+    color: #282828;
+    font-weight: 400;
+    /* overflow-x: hidden; */
+}
+
+a {
+    color: #282828;
+    transition: all ease 700ms;
+    -moz-transition: all ease 700ms;
+    -webkit-transition: all ease 700ms;
+    -ms-transition: all ease 700ms;
+    -o-transition: all ease 700ms;
+}
+
+a:hover {
+    color: #8C848C;
+    text-decoration: none;
+}
+
+a:focus {
+    outline: 0;
+    text-decoration: none;
+    color: #8C848C;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*=======================================================================
+// Section Setup
+=========================================================================*/
+
+.comonSection {
+    width: 100%;
+    position: relative;
+    background: #FFF;
+    padding: 100px 0;
+    /* margin-top: 10em;
+    margin-bottom: 10em; */
+}
+
+.sectionTitle {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    margin-bottom: 3.43em;
+    /* margin: auto auto; */
+}
+
+.sectionTitle h2 {
+    font-size: 1rem;
+}
+
+.sectionTitle i {
+    font-size: 2rem;
+    color: #808184;
+}
+
+.sectionTitle p {
+    font-size: 1rem;
+    margin: 0px;
+    letter-spacing: 1px;
+    line-height: 24px;
+}
+
+.sectionTitle.whites p {
+    color: #FFF;
+}
+
+.sectionTitle h2 span {
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+    margin: 15px 0 20px;
+    line-height: 11px;
+    text-transform: uppercase;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.sectionTitle.whites h2 {
+    color: #FFF;
+}
+
+.sectionTitle.whites i {
+    color: #FFF;
+}
+
+.comonPage {
+    padding: 80px 0px;
+    background: #f7f7f7;
+}
+
+
+/*=======================================================================
+// Margin & padding Setup
+=========================================================================*/
+
+.noMarginBottom {
+    margin-bottom: 0px !important;
+}
+
+.noMarginRight {
+    margin-right: 0px !important;
+}
+
+.paddingRight30 {
+    padding-right: 30px !important;
+}
+
+.paddingLeft30 {
+    padding-left: 30px !important;
+}
+
+
+
+/* RESPONSIVE ======================================== */
+
+@media (min-width: 1400px) and (max-width:2000px) {
+    .folioHoverContent {
+        padding-top: 148px;
+    }
+    .mainMenu ul li {
+        padding: 0 30px 40px;
+    }
+    #footer ul li .home-button {
+        display: none;
+    }
+}
+
+@media (min-width: 912px) and (max-width: 1399px) {
+    .mainMenu ul li {
+        padding: 0 20px 40px;
+    }
+    #footer ul li .home-button {
+        display: none;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 911px) {
+    .mainMenu ul li {
+        padding: 0 15px 40px;
+    }
+    /* #menuToggle {
+        display: none;
+    } */
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .mainMenu span {
+        font-size: 1.6rem;
+    }
+    .mainMenu ul li:first-child {
+        padding-left: 0px;
+    }
+    .mainMenu ul li a {
+        letter-spacing: 0px;
+    }
+    /* Hero ===========*/
+    .b1desc {
+        /* padding: 1em 3em; */
+    }
+    .b1desc h1,
+    .b1desc7 h1 {
+        /* font-size: 4rem; */
+        /* padding-top: 0.2em; */
+    }
+    .b1desc p,
+    .b1desc7 p {
+        width: 90%;
+        /* font-size: 1.2rem; */
+        line-height: 1.4;
+        /* padding-top: 1em; */
+        /* padding-bottom: 0; */
+        margin: 0;
+    }
+    .apButtons {
+        font-size: 12px;
+        padding: 15px 20px;
+        margin-top: 2em;
+    }
+    .sF2DHolder {
+        padding: 2em 1.5em;
+    }
+    /* aboutus ========================= */
+    #aboutus {
+        padding-top: 4em;
+    }
+    .aboutItem {
+        margin-bottom: 30px;
+    }
+    .aboutItem .abVerticalBar {
+        display: none;
+    }
+    .aboutItem {
+        border-top: 0;
+    }
+    .singleAbout {
+        margin-top: 0;
+    }
+    /* services ========================== */
+    .singlePrice {
+        margin-bottom: 30px;
+    }
+    .singleFeatureDetails p {
+        /* padding: 1.5em 4em; */
+    }
+    .copyright {
+        line-height: 20px;
+        padding: 25px 0;
+    }
+    #contact h2 {
+        font-size: 2.5rem;
+        line-height: 1.5;
+    }
+    #contact p {
+        padding: 0;
+        font-size: 1.2rem;
+    }
+    .contactSection .container {
+        padding: 0 2.5em;
+    }
+    #footer ul li .home-button {
+        display: none;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .header .container-fluid {
+        padding: 0px !important;
+    }
+    .logo,
+    .fixedHeader .logo {
+        text-align: center;
+        /* border-bottom: 1px solid #e7e7e7; */
+        padding: 15px 0;
+    }
+    .mainMenu,
+    .fixedHeader .mainMenu {
+        padding-top: 0px;
+    }
+    #menuToggle {
+        width: 100%;
+        text-align: center;
+        margin: 15px 0;
+    }
+    #menuToggle a {
+        display: inline-block;
+        background: #e7e7e7;
+        text-transform: uppercase;
+        font-size: 1em;
+        letter-spacing: 2px;
+        padding: 3px 8px;
+    }
+    #menuToggle a:hover,
+    #menuToggle a.active {
+        background: #8C848C;
+        color: #FFF;
+    }
+    .mainMenu ul {
+        position: absolute;
+        width: 100%;
+        background: #FFF;
+    }
+    .mainMenu>ul {
+        height: 100vh;
+        /* overflow: scroll; */
+        display: none;
+    }
+    .mainMenu ul li,
+    .fixedHeader .mainMenu ul li {
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .mainMenu ul li:after {
+        display: none;
+    }
+    .mainMenu ul li a {
+        padding: 15px 0;
+        /* border-bottom: 1px solid #e7e7e7; */
+        width: 100%;
+    }
+    /* Hero ===========*/
+    .b1desc {
+        /* padding: 0 2em; */
+    }
+    .b1desc h1,
+    .b1desc7 h1 {
+        /* font-size: 3.2rem; */
+        /* padding-top: 0.2em; */
+    }
+    .b1desc p,
+    .b1desc7 p {
+        width: 90%;
+        /* font-size: 1.2rem; */
+        line-height: 1.4;
+        /* padding-top: 1em; */
+        /* padding-bottom: 0; */
+        margin: 0;
+    }
+    .apButtons {
+        font-size: 12px;
+        padding: 15px 20px;
+        margin-top: 2em;
+    }
+    /***************** Services *******************/
+    .sF2DHolder {
+        padding: 2em 3em;
+    }
+    .singleFeature {
+        margin-bottom: 40px;
+    }
+    .singleFeatureDetails p {
+        /* font-size: 1.15rem; */
+        letter-spacing: .75;
+    }
+    #services {
+        padding-bottom: 0;
+        padding-top: 13em;
+    }
+    /* features slider ===================*/
+    #Slider p {
+        font-size: 1.3rem;
+    }
+    #features {
+        padding-top: 3em;
+    }
+    /***************** Portfolio *******************/
+    #portfolio {
+        padding-bottom: 0;
+    }
+    .foliioMenu ul li:after {
+        display: none;
+    }
+    .foliioMenu ul li {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e7e7e7;
+    }
+    .foliioMenu ul li:last-child {
+        padding-right: 34px;
+    }
+    #Grid {
+        text-align: center;
+    }
+    .singleFolio {
+        width: 290px;
+        float: none;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    /***************** About Us *******************/
+    #aboutus {
+        padding-top: 4em;
+    }
+    .aboutItem {
+        margin-bottom: 30px;
+    }
+    .aboutItem .abVerticalBar {
+        display: none;
+    }
+    .aboutItem {
+        border-top: 0;
+    }
+    .singleAbout {
+        margin-top: 0;
+    }
+    /***************** Price *******************/
+    .singlePrice {
+        margin-bottom: 30px;
+    }
+    /***************** Client *******************/
+    .singleClient {
+        width: 260px;
+    }
+    /***************** Contact *******************/
+    .contactSection .container {
+        padding: 0 3.5em;
+    }
+    #contact h2 {
+        font-size: 0.7rem;
+        line-height: 1.9;
+    }
+    #contact p {
+        padding: 0;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        padding-bottom: 0;
+    }
+    .contactSection .container {
+        padding: 0 2em;
+    }
+    .contactSection {
+        padding-top: 9em;
+        overflow: scroll;
+    }
+    .contactForm {
+        font-size: 1rem;
+        line-height: 1;
+    }
+    .contactForm input[type="text"],
+    .contactForm input[type="email"],
+    .contactForm input[type="number"] {
+        width: 100%;
+        height: 2em;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0.6em;
+    }
+    .contactForm textarea {
+        padding-left: 0;
+        margin-bottom: 0;
+        color: darkgray;
+        /* background: red; */
+        height: 9em;
+    }
+    .contactForm .form-check-label {
+        font-size: 0.8rem;
+    }
+    /***************** Footer *******************/
+    .copyright {
+        text-align: center;
+        /* line-height: 20px; */
+        /* padding-bottom: 30px; */
+        padding: 35px 0;
+        /* margin-bottom: 1em; */
+    }
+    .backTotopcenter {
+        bottom: 0;
+        height: 3em;
+        /* padding: 15px 0; */
+        position: absolute;
+        width: 100%;
+        padding: 0;
+        display: none;
+    }
+    #backToTop {
+        width: 100%;
+        padding-top: 10px;
+        z-index: 9999;
+        /* height: 4em; */
+        /* color: red; */
+        background-color: red;
+        display: none;
+    }
+    /***************** Testimonial *******************/
+    .testimonialItem p {
+        letter-spacing: 1px;
+        font-size: 1.2em;
+        line-height: 25px;
+        width: 90%;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .header .container-fluid {
+        /* padding: 0px !important; */
+    }
+    .col-xl-10 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .col-xl-2 {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .logo,
+    .fixedHeader .logo {
+        text-align: center;
+        /* border-bottom: 1px solid #e7e7e7; */
+        padding: 17px 0px 2px 0px;
+        /* display: none; */
+    }
+    .mainMenu,
+    .fixedHeader .mainMenu {
+        padding-top: 0px;
+        /* display: none; */
+    }
+    #menuToggle {
+        width: 100%;
+        text-align: center;
+        margin: 10px 0;
+    }
+    #menuToggle a {
+        display: inline-block;
+        background: #e7e7e7;
+        text-transform: uppercase;
+        font-size: 13px;
+        letter-spacing: 2px;
+        padding: 5px 10px;
+    }
+    #menuToggle a:hover,
+    #menuToggle a.active {
+        background: #8C848C;
+        color: #FFF;
+    }
+    .mainMenu ul {
+        position: absolute;
+        width: 100%;
+        background: #FFF;
+    }
+    .mainMenu>ul {
+        height: 100vh;
+        /* overflow: scroll; */
+        display: none;
+    }
+    .mainMenu ul li,
+    .fixedHeader .mainMenu ul li {
+        padding: 0px;
+        width: 100%;
+        text-align: center;
+    }
+    .mainMenu ul li:after {
+        display: none;
+    }
+    .mainMenu ul li a {
+        padding: 15px 0;
+        border-bottom: 1px solid #fffbfb;
+        /* width: 100%; */
+    }
+    /* Hero =========================*/
+    .b1desc h1,
+    .b1desc7 h1 {
+        /* font-size: 2.2rem; */
+        /* padding-top: 0.1em; */
+        /* padding-bottom: 0.1em; */
+    }
+    .b1desc p,
+    .b1desc7 p {
+        width: 80%;
+        /* font-size: 1.2rem; */
+        line-height: 1.1;
+        /* padding-top: 1em; */
+        /* padding-bottom: 0; */
+        margin: 0;
+    }
+    .apButtons {
+        font-size: 12px;
+        padding: 15px 20px;
+        margin-top: 1em;
+    }
+    .b1desc {
+        padding: 0 2em;
+    }
+    /* services ======================*/
+    #services {
+        padding-bottom: 3em;
+    }
+    .slidersection p {
+        font-size: 1rem;
+        padding: 0;
+        margin: auto auto;
+        width: 100%;
+        line-height: 1.2;
+        padding: 4em 0
+    }
+    #webdesign h2 {
+        margin: 0;
+        padding: 0;
+    }
+    .sF2DHolder {
+        margin: 0;
+        /* padding: 10px 0; */
+    }
+    /***************** services *******************/
+    .sF2DHolder {
+        padding: 1em 1.5em;
+    }
+    .featuresSection {
+        padding-top: 0;
+    }
+    .featuresSection .btn {
+        font-size: 0.9rem;
+        text-align: left!important;
+        padding: 1.4em;
+    }
+    .singleFeatureDetails {
+        margin: 0;
+    }
+    .singleFeatureDetails p {
+        /* font-size: 1.2rem; */
+        line-height: 1.4;
+    }
+    .singleFeatureDetails h2 {
+        /* margin: 10px 0; */
+        line-height: 2;
+    }
+    /***************** accordian *******************/
+    .card-body {
+        font-size: 1.2rem;
+    }
+    /***************** Portfolio *******************/
+    .singlePrice {
+        margin-bottom: 30px;
+    }
+    .pricingSection {
+        padding-bottom: 0;
+    }
+    /***************** printing Portfolio *******************/
+    .foliioMenu ul li:after {
+        display: none;
+    }
+    .foliioMenu ul li {
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #e7e7e7;
+    }
+    .singleFolio {
+        width: 290px;
+        float: none;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+    .foliioMenu ul li:last-child {
+        padding-right: 34px;
+    }
+    #Grid {
+        text-align: center;
+    }
+    /***************** About Us *******************/
+    #aboutus {
+        padding-top: 4em;
+    }
+    .aboutItem {
+        margin-bottom: 30px;
+    }
+    .aboutItem .abVerticalBar {
+        display: none;
+    }
+    .aboutItem {
+        border-top: 0;
+    }
+    .singleAbout {
+        margin-top: 0;
+    }
+    /***************** Testimonial *******************/
+    .testimonialItem p {
+        letter-spacing: .75px;
+        font-size: 1em;
+        line-height: 20px;
+        width: 90%;
+    }
+    /***************** Contact *******************/
+    #contact h2 {
+        font-size: 1.2rem;
+        line-height: 1.7;
+    }
+    #contact p {
+        padding: 0;
+        font-size: 0.9rem;
+        line-height: 1.4;
+        padding-bottom: 0;
+        letter-spacing: .75px;
+    }
+    .contactSection .container {
+        padding: 0 1.5em;
+    }
+    .contactSection {
+        padding-top: 2.5em;
+        overflow: scroll;
+    }
+    .contactForm {
+        font-size: 1rem;
+        line-height: 1;
+    }
+    .contactForm input[type="text"],
+    .contactForm input[type="email"],
+    .contactForm input[type="number"] {
+        width: 100%;
+        height: 2em;
+        padding-left: 0;
+        padding-right: 0;
+        margin-bottom: 0.6em;
+    }
+    .contactForm textarea {
+        padding-left: 0;
+        margin-bottom: 0;
+        color: darkgray;
+        /* background: red; */
+        height: 9em;
+    }
+    .contactForm .form-check-label {
+        font-size: 0.8rem;
+    }
+
+    .contactSection a {
+        /* color: #fa038b; */
+        font-size: 1.5rem;
+    }
+    /***************** Footer *******************/
+    .copyright {
+        text-align: center;
+        /* line-height: 20px; */
+        /* padding-bottom: 30px; */
+        padding: 35px 0;
+        /* margin-bottom: 1em; */
+    }
+    .backTotopcenter {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactSection {
+        background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_fill,h_480,f_auto,q_auto/v1622636161/portfolio/webdesign-photography-freelancer-london-coffee-nespresso_yit5xz.jpg');
+    }
+    .testimonialsection {
+        background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_fill,h_480,f_auto,q_auto/portfolio/photography-freelancer-london-webdesign-portfolio.jpg');
+    }
+    .slidersection {
+        background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_crop,g_auto,h_400,w_700,f_auto,q_auto/portfolio/festival-website.jpg');
+    }
+    .heroSection {
+        background: -webkit-linear-gradient(45deg, rgba(255, 175, 188, .9), rgba(100, 216, 243, .9), rgba(232, 236, 1, .7), rgba(245, 146, 176, .9), rgba(52, 219, 216, .7)) 0 0 / 1000% no-repeat, url(https://res.cloudinary.com/millscreates/image/upload/v1624028632/f_auto,q_auto/portfolio/wheel_480_small.jpg) 0 0 / cover no-repeat;
+        /* -webkit-animation: gradientAnimation 40s ease infinite; */
+        /* animation: gradientAnimation 40s ease infinite;  */
+    }
+    @-webkit-keyframes gradientAnimation {
+        0% { background-position: 0% 50%, 0 0;}
+        50% { background-position: 80% 0%, 0 0;}
+        100% { background-position: 0% 30%, 0 0;}
+    }
+    
+    @keyframes gradientAnimation {
+        0% { background-position: 0% 50%, 0 0;}
+        50% { background-position: 80% 0%, 0 0;}
+        100% { background-position: 0% 30%, 0 0;}
+    }
+    @supports (-webkit-touch-callout: inherit) {
+        .contactSection,
+        .testimonialsection,
+        .slidersection
+        {
+            background-attachment: scroll;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .contactSection {
+        background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_fill,f_webp,fl_awebp,q_auto/v1622636161/portfolio/webdesign-photography-freelancer-london-coffee-nespresso_yit5xz.jpg');
+    }
+    .slidersection {
+        background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/f_auto,q_auto/portfolio/festival-website.jpg');
+    }
+    .testimonialsection {
+        background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_scale,w_700,f_webp,fl_awebp,q_auto/portfolio/photography-freelancer-london-webdesign-portfolio.jpg');
+    }
+    .heroSection {
+        background: -webkit-linear-gradient(45deg, rgba(255, 175, 188, .9), rgba(100, 216, 243, .9), rgba(232, 236, 1, .7), rgba(245, 146, 176, .9), rgba(52, 219, 216, .7)) 0 0 / 1000% no-repeat, url(https://res.cloudinary.com/millscreates/image/upload/f_auto,q_auto/portfolio/webdesign_london_wheel_large_.jpg) 0 0 / cover no-repeat;
+    }
+    @supports (-webkit-touch-callout: inherit) {
+        .contactSection,
+        .testimonialsection,
+        .slidersection
+         {
+            background-attachment: scroll;
+        }
+    }
+}
+
+@media (min-width: 1025px) {
+    .contactSection {
+        background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/f_auto,q_auto/v1622636161/portfolio/webdesign-photography-freelancer-london-coffee-nespresso_yit5xz.jpg');
+    }
+    .slidersection {
+        background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/f_auto,q_auto/portfolio/festival-website.jpg');
+    }
+    .testimonialsection {
+        background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/f_auto,q_auto/portfolio/photography-freelancer-london-webdesign-portfolio.jpg');
+    }
+    .heroSection {
+        background: linear-gradient(45deg, rgba(255, 175, 188, .9), rgba(100, 216, 243, .9), rgba(232, 236, 1, .7), rgba(245, 146, 176, .9), rgba(52, 219, 216, .7)) 0 0 / 1000% no-repeat, url(https://res.cloudinary.com/millscreates/image/upload/f_auto,q_auto/portfolio/webdesign_london_wheel_large_.jpg) 0 0 / cover no-repeat;
+    }
+}
