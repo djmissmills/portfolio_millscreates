@@ -3,6 +3,7 @@
 =========================================================================
 1. Cutive Mono [ Body]
 2. Open Sans [ Headings ]
+
 ==========================================================================*/
 
 
@@ -1214,6 +1215,7 @@ a.pp_close {
 /*!
 Animate.css - http://daneden.me/animate
 Licensed under the MIT license - http://opensource.org/licenses/MIT
+
 Copyright (c) 2015 Daniel Eden
 */
 
@@ -4252,3 +4254,8 @@ Copyright (c) 2015 Daniel Eden
     -webkit-animation-name: slideOutUp;
     animation-name: slideOutUp;
 }
+
+
+/* Responsive ================================ */
+
+
