@@ -594,7 +594,7 @@
         background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_crop,g_auto,h_400,w_700,f_auto,q_auto/portfolio/festival-website.jpg');
     }
     .heroSection {
-        background: -webkit-linear-gradient(45deg, rgba(255, 175, 188, .9), rgba(100, 216, 243, .9), rgba(232, 236, 1, .7), rgba(245, 146, 176, .9), rgba(52, 219, 216, .7)) 0 0 / 1000% no-repeat, url(https://res.cloudinary.com/millscreates/image/upload/v1624028632/portfolio/wheel_480_small.jpg) 0 0 / cover no-repeat;
+        background: -webkit-linear-gradient(45deg, rgba(255, 175, 188, .9), rgba(100, 216, 243, .9), rgba(232, 236, 1, .7), rgba(245, 146, 176, .9), rgba(52, 219, 216, .7)) 0 0 / 1000% no-repeat, url(https://res.cloudinary.com/millscreates/image/upload/v1624028632/f_auto,q_auto/portfolio/wheel_480_small.jpg) 0 0 / cover no-repeat;
         /* -webkit-animation: gradientAnimation 40s ease infinite; */
         /* animation: gradientAnimation 40s ease infinite;  */
     }
@@ -630,7 +630,7 @@
         background-image: url('https://res.cloudinary.com/millscreates/image/upload/e_grayscale/c_scale,w_700,f_webp,fl_awebp,q_auto/portfolio/photography-freelancer-london-webdesign-portfolio.jpg');
     }
     .heroSection {
-        background: -webkit-linear-gradient(45deg, rgba(255, 175, 188, .9), rgba(100, 216, 243, .9), rgba(232, 236, 1, .7), rgba(245, 146, 176, .9), rgba(52, 219, 216, .7)) 0 0 / 1000% no-repeat, url(https://res.cloudinary.com/millscreates/image/upload/portfolio/webdesign_london_wheel_large_.jpg) 0 0 / cover no-repeat;
+        background: -webkit-linear-gradient(45deg, rgba(255, 175, 188, .9), rgba(100, 216, 243, .9), rgba(232, 236, 1, .7), rgba(245, 146, 176, .9), rgba(52, 219, 216, .7)) 0 0 / 1000% no-repeat, url(https://res.cloudinary.com/millscreates/image/upload/f_auto,q_auto/portfolio/webdesign_london_wheel_large_.jpg) 0 0 / cover no-repeat;
     }
     @supports (-webkit-touch-callout: inherit) {
         .contactSection,
