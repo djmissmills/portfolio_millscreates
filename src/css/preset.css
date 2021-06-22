@@ -26,7 +26,7 @@
     font-family: 'icomoon';
     src:  url('/fonts/icomoon.eot?cbn3k');
     src:  url('/fonts/icomoon.eot?cbn3k#iefix') format('embedded-opentype'),
-      url('/fonts/icomoon.ttf?cbn3k') format('truetype'),
+      /* url('/fonts/icomoon.ttf?cbn3k') format('truetype'), */
       url('/fonts/icomoon.woff?cbn3k') format('woff'),
       url('/fonts/icomoon.svg?cbn3k#icomoon') format('svg');
     font-weight: normal;
