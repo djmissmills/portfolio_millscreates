@@ -75,8 +75,6 @@
   }
   
 
-
-
 /* ==================================PRELOADER=================================== */
 
 .preloader {
@@ -178,16 +176,12 @@ body::-webkit-scrollbar {
     width: 10px;
 }
 
-
 /* width of the entire scrollbar */
-
 body::-webkit-scrollbar-track {
     background: #fff;
 }
 
-
 /* color of the tracking area */
-
 body::-webkit-scrollbar-thumb {
     background-color: #fa038b;
     /* color of the scroll thumb */
@@ -283,40 +277,15 @@ body #magicPointer {
 }
 
 
-/* body #magicPointer {
-height: 10px;
-width: 10px;
-position: fixed;
-z-index: 9999;
-background: blue;
-pointer-events: none;} */
-
 body #magicPointer.pointer-blur {
     height: 50px;
     width: 50px;
     background: rgba(128, 128, 128, 0.187);
     box-shadow: 0px 0px 10px -5px rgb(4, 4, 4);
 }
-
-
-/* body #magicPointer.pointer-overlay {
-    height: 40px;
-    width: 40px;
-    mix-blend-mode: multiply;
-    background: #8c848c3a;
-    box-shadow: 0px 0px 15px -5px white;
-} */
-
 body .magic-hover {
     transition: all 0.2s;
 }
-
-
-/* body .magic-hover:hover {
-    cursor: none;
-    color: red;
-} */
-
 
 /* Box Model */
 
@@ -330,7 +299,6 @@ body .magic-hover {
 
 body,
 html {
-    /* font-family: 'Cutive Mono'; */
     font-family: 'Inconsolata', monospace;
     font-size: 14px;
     line-height: 24px;

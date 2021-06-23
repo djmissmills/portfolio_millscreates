@@ -1,10 +1,5 @@
 (function($) {
-    'use strict';
-
-    $(window).on("load", function(){
-        $("body").append("<script src='theme.js'>")
-    });
-    
+ 
     //========================
     // Full Height Banner
     //========================
@@ -26,15 +21,9 @@
         var slcontentsPad = (winHeight - slcontents) / 2;
         var b1descPad = (winHeight - b1desc) / 2;
 
-        $('.ban_items').css({ 'padding-top': banPad });
-        $('.slcontents').css({ 'padding-top': slcontentsPad });
         $('.bdescs').css({ 'padding-top': b1descPad });
-        $('.bannersa').css({ 'height': winHeight });
-        $('.bannerSix').css({ 'height': winHeight });
         $('.bannerSeven').css({ 'height': winHeight });
-
     }
-
 
     //========================
     // WOW INIT
@@ -45,16 +34,12 @@
         });
         wow.init();
     }
-
-
     // ========================
     // Loader 
     // ========================
     setTimeout(function() {
         $(".preloader").fadeOut();
     }, 1500);
-
-
 
     //========================
     // Back To Top
@@ -63,9 +48,6 @@
         e.preventDefault();
         $('html, body').animate({ scrollTop: 0 }, 800);
     });
-
-
-
     //========================
     // Feature Click
     //========================
@@ -80,8 +62,6 @@
             $(id).fadeIn('slow');
         });
     }
-
-
 
     //========================
     // Menu Setup
@@ -161,15 +141,12 @@
         disableAxis: 'x'
     });
 
-
-
 })(jQuery);
 
 // Initialize cloudinary
 var cl = cloudinary.Cloudinary.new({ cloud_name: 'millscreates', secure: true });
 // Call
 cl.responsive();
-
 
 //magic mouse
 options = {

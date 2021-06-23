@@ -23,9 +23,6 @@
     .mainMenu ul li {
         padding: 0 15px 40px;
     }
-    /* #menuToggle {
-        display: none;
-    } */
 }
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -39,21 +36,10 @@
         letter-spacing: 0px;
     }
     /* Hero ===========*/
-    .b1desc {
-        /* padding: 1em 3em; */
-    }
-    .b1desc h1,
-    .b1desc7 h1 {
-        /* font-size: 4rem; */
-        /* padding-top: 0.2em; */
-    }
     .b1desc p,
     .b1desc7 p {
         width: 90%;
-        /* font-size: 1.2rem; */
         line-height: 1.4;
-        /* padding-top: 1em; */
-        /* padding-bottom: 0; */
         margin: 0;
     }
     .apButtons {
@@ -84,9 +70,6 @@
     .singlePrice {
         margin-bottom: 30px;
     }
-    .singleFeatureDetails p {
-        /* padding: 1.5em 4em; */
-    }
     .copyright {
         line-height: 20px;
         padding: 25px 0;
@@ -114,7 +97,6 @@
     .logo,
     .fixedHeader .logo {
         text-align: center;
-        /* border-bottom: 1px solid #e7e7e7; */
         padding: 15px 0;
     }
     .mainMenu,
@@ -146,7 +128,6 @@
     }
     .mainMenu>ul {
         height: 100vh;
-        /* overflow: scroll; */
         display: none;
     }
     .mainMenu ul li,
@@ -160,25 +141,13 @@
     }
     .mainMenu ul li a {
         padding: 15px 0;
-        /* border-bottom: 1px solid #e7e7e7; */
         width: 100%;
     }
     /* Hero ===========*/
-    .b1desc {
-        /* padding: 0 2em; */
-    }
-    .b1desc h1,
-    .b1desc7 h1 {
-        /* font-size: 3.2rem; */
-        /* padding-top: 0.2em; */
-    }
     .b1desc p,
     .b1desc7 p {
         width: 90%;
-        /* font-size: 1.2rem; */
         line-height: 1.4;
-        /* padding-top: 1em; */
-        /* padding-bottom: 0; */
         margin: 0;
     }
     .apButtons {
@@ -336,9 +305,6 @@
 }
 
 @media (min-width: 320px) and (max-width: 480px) {
-    .header .container-fluid {
-        /* padding: 0px !important; */
-    }
     .col-xl-10 {
         padding-right: 0;
         padding-left: 0;
@@ -350,14 +316,11 @@
     .logo,
     .fixedHeader .logo {
         text-align: center;
-        /* border-bottom: 1px solid #e7e7e7; */
         padding: 17px 0px 2px 0px;
-        /* display: none; */
     }
     .mainMenu,
     .fixedHeader .mainMenu {
         padding-top: 0px;
-        /* display: none; */
     }
     #menuToggle {
         width: 100%;
@@ -384,7 +347,6 @@
     }
     .mainMenu>ul {
         height: 100vh;
-        /* overflow: scroll; */
         display: none;
     }
     .mainMenu ul li,
@@ -399,22 +361,12 @@
     .mainMenu ul li a {
         padding: 15px 0;
         border-bottom: 1px solid #fffbfb;
-        /* width: 100%; */
     }
     /* Hero =========================*/
-    .b1desc h1,
-    .b1desc7 h1 {
-        /* font-size: 2.2rem; */
-        /* padding-top: 0.1em; */
-        /* padding-bottom: 0.1em; */
-    }
     .b1desc p,
     .b1desc7 p {
         width: 80%;
-        /* font-size: 1.2rem; */
         line-height: 1.1;
-        /* padding-top: 1em; */
-        /* padding-bottom: 0; */
         margin: 0;
     }
     .apButtons {
@@ -443,7 +395,6 @@
     }
     .sF2DHolder {
         margin: 0;
-        /* padding: 10px 0; */
     }
     /***************** services *******************/
     .sF2DHolder {
@@ -461,11 +412,9 @@
         margin: 0;
     }
     .singleFeatureDetails p {
-        /* font-size: 1.2rem; */
         line-height: 1.4;
     }
     .singleFeatureDetails h2 {
-        /* margin: 10px 0; */
         line-height: 2;
     }
     /***************** accordian *******************/
@@ -559,7 +508,6 @@
         padding-left: 0;
         margin-bottom: 0;
         color: darkgray;
-        /* background: red; */
         height: 9em;
     }
     .contactForm .form-check-label {
@@ -567,16 +515,12 @@
     }
 
     .contactSection a {
-        /* color: #fa038b; */
         font-size: 1.5rem;
     }
     /***************** Footer *******************/
     .copyright {
         text-align: center;
-        /* line-height: 20px; */
-        /* padding-bottom: 30px; */
         padding: 35px 0;
-        /* margin-bottom: 1em; */
     }
     .backTotopcenter {
         display: none;
@@ -595,8 +539,6 @@
     }
     .heroSection {
         background: -webkit-linear-gradient(45deg, rgba(255, 175, 188, .9), rgba(100, 216, 243, .9), rgba(232, 236, 1, .7), rgba(245, 146, 176, .9), rgba(52, 219, 216, .7)) 0 0 / 1000% no-repeat, url(https://res.cloudinary.com/millscreates/image/upload/v1624028632/f_auto,q_auto/portfolio/wheel_480_small.jpg) 0 0 / cover no-repeat;
-        /* -webkit-animation: gradientAnimation 40s ease infinite; */
-        /* animation: gradientAnimation 40s ease infinite;  */
     }
     @-webkit-keyframes gradientAnimation {
         0% { background-position: 0% 50%, 0 0;}
